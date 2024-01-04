@@ -24,9 +24,10 @@ body {
     flex-direction: column;
     background-color: white;
     width: 600px;
-    height: 570px;
+    /* height: 570px; */
     border-radius: 15px;
     gap: 20px;
+    min-height: 570px;
 }
 
 .container > * {
@@ -56,6 +57,7 @@ h4 {
 
 p {
     font-size: 16px;
+    color: hsl(292, 16%, 49%);
 }
 
 .line-break {
@@ -100,13 +102,16 @@ p {
         margin: 0 30px;
     }
 
+    .title {
+        margin-top: 25px;
+    }
+    .title img {
+        margin-right: 5px;
+    }
+
 }
 
 @media screen and (min-width: 376px) and (max-width: 1439px){
-    body {
-        
-    }
-
     .container {
         margin: 40px;
     }
@@ -124,4 +129,8 @@ p {
         margin: 0 30px;
     }
 
+}
+
+.hidden {
+    display: none;
 }
