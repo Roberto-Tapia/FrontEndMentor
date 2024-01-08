@@ -135,7 +135,7 @@ a {
     font-weight: 400;
 }
 
-a:hover, a:active {
+a:active {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
