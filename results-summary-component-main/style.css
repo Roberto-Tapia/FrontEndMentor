@@ -1,7 +1,13 @@
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'HankenGrotesk';
 }
 
 body {
@@ -9,7 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: whitesmoke
+    background-color: rgb(235, 232, 232)
 }
 
 .parent {
@@ -18,24 +24,23 @@ body {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 350px;
     border-radius: 24px;
     overflow: hidden;
-    background-color: white;
+    background-color: white
 }
 
 
 .div1 { 
     grid-area: 1 / 1 / 2 / 2; 
-    background-color: rgb(55, 47, 236);
     border-radius: 25px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
 .container1, .container2 {
     display: flex;
     flex-direction: column;
-    padding: 30px 30px;
 }
 
 .container1 {
@@ -43,8 +48,15 @@ body {
     align-items: center;
 }
 
+h1 {
+    color: hsl(241, 100%, 89%);
+    font-size: 18px;
+    font-weight: 400;
+    padding: 30px 25px 10px;
+}
+
 .circle {
-    background-color: red;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     width: 125px;
     height: 125px;
     border-radius: 50%;
@@ -52,10 +64,33 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 15px 25px;
+}
+
+.score {
+    color: hsl(0, 0%, 100%);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.score-2 {
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(241, 100%, 89%, 75%);
+}
+
+h5 {
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 25px;
 }
 
 p {
     text-align: center;
+    color: hsl(241, 100%, 89%);
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .div2 { 
@@ -67,9 +102,14 @@ p {
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 25px;
+    padding: 7px;
+    border-radius: 8px; 
+}
+
+h2 {
+    margin: 30px 25px 10px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .percent-item1 {
@@ -84,12 +124,101 @@ p {
 a {
     text-decoration: none;
     color: white;
-    background-color: navy;
+    background-color: hsl(224, 30%, 27%);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     border-radius: 100px;
-    margin: 20px 0;
+    margin: 20px 25px;
+    font-size: 13px;
+    font-weight: 400;
 }
 
+/* Summary Colors start */
+.reaction {
+    color: hsl(0, 100%, 67%);
+}
+.memory {
+    color: hsl(39, 100%, 56%);
+}
+.verbal {
+    color: hsl(166, 100%, 37%);
+}
+.visual {
+    color: hsl(234, 85%, 45%);
+}
+
+.reaction, .memory, .verbal, .visual {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.score1, .score2, .score3, .score4 {
+    margin: 7px 25px;
+}
+
+.score1 {
+    background-color: hsl(0, 100%, 67%, 10%);
+}
+
+.score2 {
+    background-color: hsl(39, 100%, 56%, 10%);
+}
+.score3 {
+    background-color: hsl(166, 100%, 37%, 10%);
+}
+.score4 {
+    background-color: hsl(234, 85%, 45%, 10%);
+}
+
+.percent-item2, .percent-item3 {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.percent-item3 {
+    color: hsl(224, 30%, 27%, 70%)
+}
+
+.para-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .parent {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        border-radius: 0;
+    }
+    .div1 {
+        border-radius: 0 0 25px 25px;
+        height: 40vh;
+    }
+    .para-desktop {
+        display: none;
+    }
+    .para-mobile {
+        display: inline-block;
+    }
+    h2 {
+        margin: 30px 35px 10px;
+    }
+    .percent-container {
+        margin: 10px 35px;
+        padding: 20px 10px;
+    }
+    a {
+        margin: 20px 35px;
+        padding: 15px;
+        font-size: 16px;
+    }
+    .reaction, .memory, .verbal, .visual {
+        font-size: 16px;
+    }
+    .percent-item2, .percent-item3 {
+        font-size: 16px;
+    }
+
+}
