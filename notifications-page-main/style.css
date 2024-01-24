@@ -1,0 +1,60 @@
+- White: hsl(0, 0%, 100%)
+- Very light grayish blue: hsl(210, 60%, 98%)
+- Light grayish blue 1: hsl(211, 68%, 94%)
+- Light grayish blue 2: hsl(205, 33%, 90%)
+- Grayish blue: hsl(219, 14%, 63%)
+- Dark grayish blue: hsl(219, 12%, 42%)
+- Very dark blue: hsl(224, 21%, 14%)
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(246, 247, 255);
+}
+main {
+    background-color: rgb(255, 255, 255);
+    width: 800px;
+    height: 80vh;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+main div {
+    margin: 0px 30px;
+}
+.navigation {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    margin: 30px 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+h1, .count {
+    display: inline;
+}
+h1 {
+    float: top;
+    padding-right: 15px;
+    color: hsl(224, 21%, 14%);
+}
+.left-div {
+    display: flex;
+    align-items: center;
+
+}
+.count {
+    background-color: hsl(219, 68%, 35%);
+    padding: 4px 10px;
+    color: white;
+    border-radius: 5px;
+}
+.right-div {
+    color: hsl(219, 12%, 42%);
+}
