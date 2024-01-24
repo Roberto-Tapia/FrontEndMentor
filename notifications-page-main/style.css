@@ -20,18 +20,18 @@ body {
 main {
     background-color: rgb(255, 255, 255);
     width: 800px;
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
+    flex-direction: column;
     margin: 0 auto;
     border-radius: 15px;
 }
-main div {
-    margin: 0px 30px;
+.navigation, .notif {
+    margin: 0 30px;
 }
 .navigation {
     display: flex;
     height: 40px;
-    width: 100%;
     margin: 30px 30px;
     align-items: center;
     justify-content: space-between;
@@ -47,7 +47,7 @@ h1 {
 .left-div {
     display: flex;
     align-items: center;
-
+    justify-content: left;
 }
 .count {
     background-color: hsl(219, 68%, 35%);
@@ -57,4 +57,17 @@ h1 {
 }
 .right-div {
     color: hsl(219, 12%, 42%);
+}
+.notif {
+    background-color: azure;
+    margin: 10px 30px;
+    display: flex;
+    padding: 15px 40px;
+}
+.notif img {
+    padding-right: 20px;
+    max-height: 40px;
+}
+p {
+    margin: 0;
 }
