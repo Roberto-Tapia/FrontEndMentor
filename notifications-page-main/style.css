@@ -1,17 +1,19 @@
-- White: hsl(0, 0%, 100%)
+/* - White: hsl(0, 0%, 100%)
 - Very light grayish blue: hsl(210, 60%, 98%)
 - Light grayish blue 1: hsl(211, 68%, 94%)
 - Light grayish blue 2: hsl(205, 33%, 90%)
 - Grayish blue: hsl(219, 14%, 63%)
 - Dark grayish blue: hsl(219, 12%, 42%)
-- Very dark blue: hsl(224, 21%, 14%)
+- Very dark blue: hsl(224, 21%, 14%) */
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
 body {
+    min-height: 900px;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -49,6 +51,9 @@ h1 {
     align-items: center;
     justify-content: left;
 }
+.bg-blue {
+
+}
 .count {
     background-color: hsl(219, 68%, 35%);
     padding: 4px 10px;
@@ -59,15 +64,53 @@ h1 {
     color: hsl(219, 12%, 42%);
 }
 .notif {
-    background-color: azure;
-    margin: 10px 30px;
+    margin: 5px 30px;
     display: flex;
     padding: 15px 40px;
 }
-.notif img {
+.notif:last-of-type {
+    margin: 10px 30px 30px;
+}
+.notif > img {
     padding-right: 20px;
+}
+
+img {
     max-height: 40px;
 }
 p {
     margin: 0;
+}
+.p-left {
+    padding-left: 10px;
+    color: red;
+    font-size: 22px;
+}
+.new {
+    padding-left: 15px;
+    color: red;
+    font-size: x-large;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.bordered {
+    border: solid 1px rgba(167, 167, 167, 0.42);
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.flex-sb {
+    justify-content: space-between;
+}
+
+.bg-blue {
+    background-color: azure;
 }
